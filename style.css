@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sidebar{
+    width: 0;
+    height: 100vh;
+    background-color: #ffdd00;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: width 0.5s;
+
+}
+
+.sidebar h2{
+    text-align: left;
+    padding: 15px;
+    color: #1c1c1c;
+    cursor: pointer;
+}
+.ctrlbt{
+    font-size: 25px;
+    margin: 20px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+.close::after{
+    content: '\002716' ;
+    
+}
+.open::after{
+    content: '\002630';
+}
+.show{
+    width: 250px;
+}
